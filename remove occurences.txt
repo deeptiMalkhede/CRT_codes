@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<string.h>
+int main()
+{
+    char a[100],n,b;
+    int i,j;
+    gets(a);
+    int x=strlen(a);
+    printf("enter char: ");
+    scanf("%c",&b);
+    for(i=0,j=0;i<x;i++){
+        if(a[i]!=b){
+            a[j]=a[i];
+            j++;
+        }
+    }
+    a[j]='\0';
+    
+    
+        printf("%s",a);
+    
+
+    return 0;
+}
